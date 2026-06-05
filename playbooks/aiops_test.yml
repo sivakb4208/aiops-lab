@@ -1,0 +1,10 @@
+--- 
+- name: AIOps Connectivity Test 
+  hosts: all 
+  become: true 
+  tasks: 
+  - name: Verify connectivity 
+    ansible.builtin.ping: 
+  - name: Create test file 
+    ansible.builtin.file: path: /tmp/aiops_test 
+    state: touch
