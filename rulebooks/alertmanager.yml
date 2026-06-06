@@ -1,4 +1,3 @@
-```yaml
 ---
 - name: AlertManager Webhook Rulebook
 
@@ -9,10 +8,7 @@
 
   rules:
     - name: Test Webhook
-
       condition: event.payload is defined
-
       action:
         run_job_template:
           name: AIOps Test Job
-```
